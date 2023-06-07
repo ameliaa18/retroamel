@@ -1,0 +1,9 @@
+package com.stmik.retroamel
+
+import retrofit2.Call
+import retrofit2.http.GET
+
+interface ApiService {
+    @GET("character")
+    fun getRick(): Call<ResponseRick>
+}
